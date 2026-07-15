@@ -1,0 +1,80 @@
+{
+  "baseline": "clean_16k",
+  "groups": {
+    "sample_rate": {
+      "versions": [
+        "clean_16k",
+        "sr_8k",
+        "sr_24k"
+      ],
+      "wer_by_version": {
+        "clean_16k": 0.013707562697017887,
+        "sr_8k": 0.019526041230786394,
+        "sr_24k": 0.013498340167935956
+      },
+      "best_version": "sr_24k",
+      "worst_version": "sr_8k",
+      "max_wer_delta_vs_baseline": 0.005818
+    },
+    "speed": {
+      "versions": [
+        "clean_16k",
+        "speed_0_9",
+        "speed_1_1"
+      ],
+      "wer_by_version": {
+        "clean_16k": 0.013707562697017887,
+        "speed_0_9": 0.11308803154145876,
+        "speed_1_1": 0.1723963418603138
+      },
+      "best_version": "clean_16k",
+      "worst_version": "speed_1_1",
+      "max_wer_delta_vs_baseline": 0.158689
+    },
+    "volume": {
+      "versions": [
+        "clean_16k",
+        "volume_0_5",
+        "volume_1_5"
+      ],
+      "wer_by_version": {
+        "clean_16k": 0.013707562697017887,
+        "volume_0_5": 0.01327540193972532,
+        "volume_1_5": 0.013858435387433633
+      },
+      "best_version": "volume_0_5",
+      "worst_version": "volume_1_5",
+      "max_wer_delta_vs_baseline": 0.000151
+    },
+    "noise": {
+      "versions": [
+        "clean_16k",
+        "noise_snr_20",
+        "noise_snr_10",
+        "noise_snr_5"
+      ],
+      "wer_by_version": {
+        "clean_16k": 0.013707562697017887,
+        "noise_snr_20": 0.028928269218251625,
+        "noise_snr_10": 0.08884169758510732,
+        "noise_snr_5": 0.19039482615932446
+      },
+      "best_version": "clean_16k",
+      "worst_version": "noise_snr_5",
+      "max_wer_delta_vs_baseline": 0.176687
+    },
+    "vad": {
+      "versions": [
+        "clean_16k",
+        "vad_speech_only"
+      ],
+      "wer_by_version": {
+        "clean_16k": 0.013707562697017887,
+        "vad_speech_only": 0.01375080201969482
+      },
+      "best_version": "clean_16k",
+      "worst_version": "vad_speech_only",
+      "max_wer_delta_vs_baseline": 4.3e-05
+    }
+  }
+}

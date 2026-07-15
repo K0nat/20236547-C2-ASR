@@ -1,0 +1,24 @@
+# C2 ASR · conda 环境 multimodal, Python 3.10
+# PyTorch + torchaudio 请单独安装 GPU 版，例如：
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# ASR 主线（Whisper via transformers）
+transformers>=4.40.0
+accelerate>=0.27.0
+jiwer>=3.0.0
+
+# 会议长音频（VAD + Paraformer）
+funasr>=1.0.0
+modelscope>=1.9.0
+
+# 音频 I/O
+librosa>=0.10.0
+soundfile>=0.12.0
+numpy>=1.24.0
+
+# 模型下载
+huggingface_hub>=0.20.0
+
+# 工具
+tqdm>=4.66.0
+

@@ -1,0 +1,15 @@
+﻿models/
+cache/
+logs/
+__pycache__/
+*.pyc
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.wav
+.env
+outputs/**/asr_predictions.json
+outputs/**/dataset_merged.json
+outputs/eval/
+testdata/ami/

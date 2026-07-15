@@ -1,0 +1,142 @@
+{
+  "task": "c2_robustness_eval",
+  "model": "whisper-large-v3-turbo",
+  "baseline": "clean_16k",
+  "baseline_wer": 0.013707562697017887,
+  "baseline_cer": 0.008317861839977066,
+  "num_versions": 11,
+  "results": [
+    {
+      "version": "clean_16k",
+      "count": 10242,
+      "avg_wer": 0.013707562697017887,
+      "avg_cer": 0.008317861839977066,
+      "total_sec": 664.91,
+      "peak_vram_mb": 4443.89,
+      "avg_latency_sec": 0.0646,
+      "wer_delta_vs_baseline": 0.0,
+      "cer_delta_vs_baseline": 0.0,
+      "wer_relative_increase_pct": 0.0
+    },
+    {
+      "version": "sr_8k",
+      "count": 10242,
+      "avg_wer": 0.019526041230786394,
+      "avg_cer": 0.011452676040252996,
+      "total_sec": 701.62,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0682,
+      "wer_delta_vs_baseline": 0.005818,
+      "cer_delta_vs_baseline": 0.003135,
+      "wer_relative_increase_pct": 42.45
+    },
+    {
+      "version": "sr_24k",
+      "count": 10242,
+      "avg_wer": 0.013498340167935956,
+      "avg_cer": 0.007949398308158431,
+      "total_sec": 709.37,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0691,
+      "wer_delta_vs_baseline": -0.000209,
+      "cer_delta_vs_baseline": -0.000368,
+      "wer_relative_increase_pct": -1.53
+    },
+    {
+      "version": "speed_0_9",
+      "count": 10242,
+      "avg_wer": 0.11308803154145876,
+      "avg_cer": 0.07679411970263172,
+      "total_sec": 1059.16,
+      "peak_vram_mb": 4444.05,
+      "avg_latency_sec": 0.1025,
+      "wer_delta_vs_baseline": 0.09938,
+      "cer_delta_vs_baseline": 0.068476,
+      "wer_relative_increase_pct": 725.0
+    },
+    {
+      "version": "speed_1_1",
+      "count": 10242,
+      "avg_wer": 0.1723963418603138,
+      "avg_cer": 0.11637704947464986,
+      "total_sec": 990.85,
+      "peak_vram_mb": 4442.47,
+      "avg_latency_sec": 0.0962,
+      "wer_delta_vs_baseline": 0.158689,
+      "cer_delta_vs_baseline": 0.108059,
+      "wer_relative_increase_pct": 1157.67
+    },
+    {
+      "version": "volume_0_5",
+      "count": 10242,
+      "avg_wer": 0.01327540193972532,
+      "avg_cer": 0.008024594974548311,
+      "total_sec": 584.18,
+      "peak_vram_mb": 4443.89,
+      "avg_latency_sec": 0.0568,
+      "wer_delta_vs_baseline": -0.000432,
+      "cer_delta_vs_baseline": -0.000293,
+      "wer_relative_increase_pct": -3.15
+    },
+    {
+      "version": "volume_1_5",
+      "count": 10242,
+      "avg_wer": 0.013858435387433633,
+      "avg_cer": 0.008366129341294054,
+      "total_sec": 636.29,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0619,
+      "wer_delta_vs_baseline": 0.000151,
+      "cer_delta_vs_baseline": 4.8e-05,
+      "wer_relative_increase_pct": 1.1
+    },
+    {
+      "version": "noise_snr_20",
+      "count": 10242,
+      "avg_wer": 0.028928269218251625,
+      "avg_cer": 0.017265930295853747,
+      "total_sec": 662.76,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0645,
+      "wer_delta_vs_baseline": 0.015221,
+      "cer_delta_vs_baseline": 0.008948,
+      "wer_relative_increase_pct": 111.04
+    },
+    {
+      "version": "noise_snr_10",
+      "count": 10242,
+      "avg_wer": 0.08884169758510732,
+      "avg_cer": 0.0585708698896045,
+      "total_sec": 645.91,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0628,
+      "wer_delta_vs_baseline": 0.075134,
+      "cer_delta_vs_baseline": 0.050253,
+      "wer_relative_increase_pct": 548.12
+    },
+    {
+      "version": "noise_snr_5",
+      "count": 10242,
+      "avg_wer": 0.19039482615932446,
+      "avg_cer": 0.1325573853730184,
+      "total_sec": 651.89,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0634,
+      "wer_delta_vs_baseline": 0.176687,
+      "cer_delta_vs_baseline": 0.12424,
+      "wer_relative_increase_pct": 1288.98
+    },
+    {
+      "version": "vad_speech_only",
+      "count": 10242,
+      "avg_wer": 0.01375080201969482,
+      "avg_cer": 0.008299169194088931,
+      "total_sec": 641.45,
+      "peak_vram_mb": 4443.18,
+      "avg_latency_sec": 0.0625,
+      "wer_delta_vs_baseline": 4.3e-05,
+      "cer_delta_vs_baseline": -1.9e-05,
+      "wer_relative_increase_pct": 0.32
+    }
+  ]
+}

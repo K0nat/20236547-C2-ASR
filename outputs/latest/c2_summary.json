@@ -1,0 +1,15 @@
+{
+  "count": 10242,
+  "backend": "transformers",
+  "model": "whisper-large-v3-turbo",
+  "model_path": "/root/siton-tmp/multimodal/c2/models/whisper-large-v3-turbo",
+  "batch_size": 64,
+  "avg_wer": 0.012855097125747393,
+  "avg_cer": 0.007760107700854171,
+  "avg_latency_sec": 0.0455,
+  "model_size_mb": 1547.28,
+  "total_sec": 467.76,
+  "peak_vram_mb": 4443.18,
+  "num_wer_scored": 10242,
+  "wall_sec": 468.03
+}

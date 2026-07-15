@@ -1,0 +1,18 @@
+{
+  "model": "whisper-large-v3-turbo",
+  "batch_eval_root": "/root/siton-tmp/multimodal/c2/outputs/robustness",
+  "c1_data_root": "/root/siton-tmp/multimodal/c1/advanced_outputs",
+  "versions": [
+    "clean_16k",
+    "sr_8k",
+    "sr_24k",
+    "speed_0_9",
+    "speed_1_1",
+    "volume_0_5",
+    "volume_1_5",
+    "noise_snr_20",
+    "noise_snr_10",
+    "noise_snr_5",
+    "vad_speech_only"
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "model": "small",
+    "scored": 10242,
+    "raw_wer": 0.1531926718405748,
+    "norm_wer": 0.0626950287034611,
+    "norm_fixed_count": 2804
+  },
+  {
+    "model": "turbo",
+    "scored": 10242,
+    "raw_wer": 0.1260792759175086,
+    "norm_wer": 0.026202329625306685,
+    "norm_fixed_count": 2909
+  },
+  {
+    "model": "large_v3",
+    "scored": 10242,
+    "raw_wer": 0.14148190786209086,
+    "norm_wer": 0.06462447297587004,
+    "norm_fixed_count": 2493
+  },
+  {
+    "model": "paraformer_en",
+    "scored": 10242,
+    "raw_wer": 0.38395426847422637,
+    "norm_wer": 0.07672518520282985,
+    "norm_fixed_count": 6003
+  }
+]

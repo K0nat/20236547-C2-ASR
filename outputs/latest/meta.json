@@ -1,0 +1,5 @@
+{
+  "best_model": "turbo",
+  "source": "/root/siton-tmp/multimodal/c2/outputs/eval/turbo/asr_predictions.json",
+  "schema": ["id", "prediction_text"]
+}

@@ -1,0 +1,64 @@
+{
+  "dataset": "/root/siton-tmp/multimodal/common_data/dataset.json",
+  "models": [
+    {
+      "model": "whisper-small",
+      "count": 10242,
+      "backend": "transformers",
+      "model_path": "/root/siton-tmp/multimodal/c2/models/whisper-small",
+      "batch_size": 64,
+      "avg_wer": 0.027256813680363756,
+      "avg_cer": 0.016562807453310104,
+      "avg_latency_sec": 0.0131,
+      "model_size_mb": 926.37,
+      "total_sec": 137.69,
+      "peak_vram_mb": 4353.55,
+      "num_wer_scored": 10242,
+      "wall_sec": 138.33
+    },
+    {
+      "model": "whisper-large-v3-turbo",
+      "count": 10242,
+      "backend": "transformers",
+      "model_path": "/root/siton-tmp/multimodal/c2/models/whisper-large-v3-turbo",
+      "batch_size": 64,
+      "avg_wer": 0.012855097125747393,
+      "avg_cer": 0.007760107700854171,
+      "avg_latency_sec": 0.0455,
+      "model_size_mb": 1547.28,
+      "total_sec": 467.76,
+      "peak_vram_mb": 4443.18,
+      "num_wer_scored": 10242,
+      "wall_sec": 468.03
+    },
+    {
+      "model": "whisper-large-v3",
+      "count": 10242,
+      "backend": "transformers",
+      "model_path": "/root/siton-tmp/multimodal/c2/models/whisper-large-v3",
+      "batch_size": 64,
+      "avg_wer": 0.0135525055560205,
+      "avg_cer": 0.007655108647211562,
+      "avg_latency_sec": 0.0583,
+      "model_size_mb": 2948.3,
+      "total_sec": 600.14,
+      "peak_vram_mb": 18778.71,
+      "num_wer_scored": 10242,
+      "wall_sec": 600.41
+    },
+    {
+      "model": "paraformer_en",
+      "count": 10242,
+      "backend": "funasr",
+      "model_path": "/root/siton-tmp/multimodal/c2/models/modelscope/iic/speech_paraformer_asr-en-16k-vocab4199-pytorch",
+      "model_size_mb": 891.91,
+      "total_sec": 2488.84,
+      "avg_latency_sec": 0.2429,
+      "avg_wer": 0.111267,
+      "avg_cer": 0.100047,
+      "peak_vram_mb": 862.76,
+      "num_wer_scored": 10242,
+      "wall_sec": 2503.07
+    }
+  ]
+}
