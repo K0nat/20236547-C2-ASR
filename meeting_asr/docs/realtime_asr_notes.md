@@ -1,30 +1,32 @@
-# 级联实时 ASR 说明（相对完整工程）
+# 级联实时 ASR 技术说明
 
-完整实现位于团队会议工程：`realtime/server.py`（多人共用，含 ASR 以外大量逻辑）。
+完整实现位于会议工程文件 `realtime/server.py`。该文件为组内共用入口，除 ASR 外还包含其他业务模块。
 
-根据组长 README，级联路线为：
+依据完整工程 README，级联路线可概括为：
 
 ```text
-实时 ASR（Paraformer realtime）→（他人）纠错/翻译 → 字幕
+实时 ASR（Paraformer realtime）→ 上下文纠错与翻译 → 字幕输出
 ```
 
-默认实时识别模型：`paraformer-realtime-v2`。
+默认实时识别模型为 `paraformer-realtime-v2`。
 
-## 与「语音→文本」直接相关的符号
+## 与语音转写直接相关的接口
 
 | 符号 | 作用 |
 |------|------|
-| `ASR_MODEL` / `Recognition(...)` | 级联模式下创建云端实时识别 |
-| `QueueCallback.on_event` | 回调解析文本，入队 `asr_partial` 或 `asr_final` |
-| `_extract_text` / `_is_final` | 从 SDK 结果取文本、判断句末 |
-| `start_asr` | 线程中 `recognition.start()` |
-| `recognition.send_audio_frame` | 发送 PCM |
-| `sender` | 从队列取出事件推送到前端 |
+| `ASR_MODEL` / `Recognition(...)` | 级联模式下创建云端实时识别会话 |
+| `QueueCallback.on_event` | 解析识别结果，写入 `asr_partial` 或 `asr_final` 事件 |
+| `_extract_text` / `_is_final` | 提取文本，并判断是否为一句结束 |
+| `start_asr` | 在独立线程中调用 `recognition.start()` |
+| `recognition.send_audio_frame` | 发送 PCM 音频帧 |
+| `sender` | 从事件队列取出结果并推送至前端 |
 
-## 明确不在本文档范围
+## 本说明不涉及的内容
 
-- `online_vad.py`、`online_diarization.py`、声纹标签与会议级说话人校正（组长 README「说话人识别」）
-- LiveTranslate / Omni 端到端路线
-- 纪要、RAG、语音助手、TTS
+以下内容由完整工程中其他模块实现，详细说明见该工程 README：
 
-本文件仅作个人结题材料中的索引说明，不替代完整工程源码。
+- 说话人相关实现：`online_vad.py`、`online_diarization.py` 及声纹匹配与会议级校正  
+- 端到端实时翻译（LiveTranslate / Omni）  
+- 会议纪要、RAG 检索、语音助手与 TTS  
+
+本文档仅作为个人结题材料中对识别链路的索引说明，不能替代完整工程源码与系统说明。
