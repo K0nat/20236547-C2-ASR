@@ -1,0 +1,6 @@
+﻿models:
+  asr_model: "qwen3-asr-flash"
+paths:
+  segments_json: data/segments/test_segments.json
+  asr_json: outputs/asr/asr_segments.json
+
