@@ -20,7 +20,7 @@
 本仓库包含两部分：
 
 1. **实训评测主线（本 README 主体）**：将英文语音批量转写为英文文本，向 C3 输出 `asr_predictions.json`，并完成四模型对比、鲁棒性、长音频 VAD+ASR 等进阶实验。  
-2. **会议系统实时 ASR（目录 `meeting_asr/`）**：级联路线中的实时流式识别说明与离线批处理脚本；说话人标签、纪要、RAG、翻译等由组内其他成员负责。
+2. **会议系统实时 ASR（目录 `meeting_asr/`）**：级联路线中的实时流式识别说明与离线批处理脚本归档。
 
 实训侧上游接收 C1 处理后的标准音频（或组内统一 `dataset.json`），下游向 C3 输出结构化 JSON。
 
@@ -51,7 +51,7 @@ common_data/dataset.json
 | 进阶要求 | ✅ 多模型对比（4 模型）、鲁棒性实验（11 版本）、VAD + 长音频分段 ASR |
 | 可独立运行的演示 | ✅ `python c2_asr.py` 单模型批量推理；✅ `run_all_models.py` + `compare_models.py` 四模型对比 |
 | 与团队系统集成情况 | ✅ C3 通过固定路径读取 `outputs/latest/asr_predictions.json`；字段 `id` + `prediction_text` 与全组样本 id 对齐 |
-| 会议系统实时流式 ASR | ✅ 见 `meeting_asr/`（说话人标注由组长负责，本仓库不展开） |
+| 会议系统实时流式 ASR | ✅ 见 `meeting_asr/` |
 
 ---
 
@@ -397,7 +397,7 @@ C1（──标准音频 / dataset.json──► C2（本模块）──asr_predi
 
 C4 端到端路线不直接读取 C2 输出，但 C2 的 **`docs/asr_error_cases.md`** 用于解释级联 vs 端到端的错误传播差异。
 
-会议演示产品中，本人负责实时流式 ASR（`meeting_asr/`）；说话人标签与纪要等由组长负责。详见该目录 README。
+会议演示产品中，本人负责实时流式 ASR，相关说明见 `meeting_asr/`。
 
 ### 6.2 C3 调用方式
 
