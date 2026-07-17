@@ -422,6 +422,13 @@ C4 端到端路线不直接读取 C2 输出，但 C2 的 **`docs/asr_error_cases
 | GPU OOM（鲁棒性长跑） | 将 `BATCH_SIZE` 从 64 降至 16/32；`run_robustness.py` 支持 skip 已完成版本 |
 | 路径命名不一致（proposal 写 C2_ASR/，实际为 c2/） | 以服务器路径 `/root/siton-tmp/multimodal/c2/` 为准 |
 
+### 6.5 相关仓库
+
+| 类型 | 链接 |
+|------|------|
+| 本模块（C2） | https://github.com/K0nat/20236547-C2-ASR |
+| 团队合并仓库 | https://github.com/GPAUP/nlp_team |
+
 ---
 
 ## 附录：错误样例与日志

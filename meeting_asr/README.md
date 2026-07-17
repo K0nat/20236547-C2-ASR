@@ -70,4 +70,4 @@ python -m src.c2_asr_ali
 
 - 实训评测 C2（Whisper 批量识别与实验）：https://github.com/K0nat/20236547-C2-ASR  
 - 会议 ASR 说明目录：本仓库 `meeting_asr/`  
-- 完整会议工程：见团队合并代码库及其 README  
+- 团队合并代码库：https://github.com/GPAUP/nlp_team  
